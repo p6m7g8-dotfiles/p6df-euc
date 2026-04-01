@@ -15,33 +15,16 @@ p6df::modules::euc::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::euc::init(_module, dir)
+# Function: words euc $EUC_HOST = p6df::modules::euc::profile::mod()
 #
-#  Args:
-#	_module -
-#	dir -
+#  Returns:
+#	words - euc $EUC_HOST
 #
+#  Environment:	 EUC_HOST
 #>
 ######################################################################
-p6df::modules::euc::init() {
-  local _module="$1"
-  local dir="$2"
+p6df::modules::euc::profile::mod() {
 
-  p6_bootstrap "$dir"
-
-  p6_return_void
+  p6_return_words 'euc' "$"
 }
 
-######################################################################
-#<
-#
-# Function: p6df::modules::euc::mcp()
-#
-#>
-######################################################################
-p6df::modules::euc::mcp() {
-
-  # No dedicated EUC MCP server exists yet; placeholder for when one does.
-
-  p6_return_void
-}
