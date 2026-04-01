@@ -25,6 +25,6 @@ p6df::modules::euc::deps() {
 ######################################################################
 p6df::modules::euc::profile::mod() {
 
-  p6_return_words 'euc' '$EUC_HOST'
+  p6_return_words 'euc' "$"
 }
 
