@@ -36,7 +36,6 @@ TODO: Add a short summary of this module.
 ##### p6df-euc/init.zsh
 
 - `p6df::modules::euc::deps()`
-- `words euc $EUC_HOST = p6df::modules::euc::profile::mod()`
 
 #### svc
 
